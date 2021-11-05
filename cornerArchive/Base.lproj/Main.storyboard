@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,101 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cornerArchive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   ID" placeholder="ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDN-KB-IlO">
+                                <rect key="frame" x="96" y="366" width="223" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uDN-KB-IlO" secondAttribute="height" multiplier="223:34" id="OEV-UJ-zJc"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   PW" placeholder="PW" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yL4-4x-WKO">
+                                <rect key="frame" x="96" y="408" width="223" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yL4-4x-WKO" secondAttribute="height" multiplier="223:34" id="Wkj-8u-FHK"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-tD-Lxu">
+                                <rect key="frame" x="96" y="483" width="222" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WwZ-tD-Lxu" secondAttribute="height" multiplier="223:49" id="ruc-xR-n2a"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8O-TD-ur0">
+                                <rect key="frame" x="157" y="540" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E8O-TD-ur0" secondAttribute="height" multiplier="20:7" id="0ec-Lj-gtW"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SIGN UP">
+                                    <fontDescription key="titleFontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-lb-rxy">
+                                <rect key="frame" x="115" y="780" width="184" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nh5-lb-rxy" secondAttribute="height" multiplier="92:11" id="4Kc-hg-9WY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archive" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iV-6p-yBZ">
+                                <rect key="frame" x="129.5" y="112" width="155" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2iV-6p-yBZ" secondAttribute="height" multiplier="155:58" id="xEx-VZ-BfV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.14509806040000001" green="0.0078431377190000002" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uDN-KB-IlO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="3no-e7-ONp"/>
+                            <constraint firstItem="Nh5-lb-rxy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Js-xw-dRp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nh5-lb-rxy" secondAttribute="bottom" constant="60" id="5KW-m3-hyG"/>
+                            <constraint firstItem="E8O-TD-ur0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="9me-pG-2HJ"/>
+                            <constraint firstItem="yL4-4x-WKO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="BA4-hx-hxe"/>
+                            <constraint firstItem="yL4-4x-WKO" firstAttribute="top" secondItem="uDN-KB-IlO" secondAttribute="bottom" constant="8" symbolic="YES" id="H4o-5C-gGH"/>
+                            <constraint firstItem="E8O-TD-ur0" firstAttribute="top" secondItem="WwZ-tD-Lxu" secondAttribute="bottom" constant="8" symbolic="YES" id="IxA-GO-6uS"/>
+                            <constraint firstItem="Nh5-lb-rxy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="Lq4-5Q-VZC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uDN-KB-IlO" secondAttribute="trailing" constant="95" id="Lwx-d2-M8T"/>
+                            <constraint firstItem="E8O-TD-ur0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5d-sP-R1w"/>
+                            <constraint firstItem="uDN-KB-IlO" firstAttribute="top" secondItem="2iV-6p-yBZ" secondAttribute="bottom" constant="196" id="PoW-lx-uZW"/>
+                            <constraint firstItem="WwZ-tD-Lxu" firstAttribute="top" secondItem="yL4-4x-WKO" secondAttribute="bottom" constant="41" id="Qk7-2P-GTo"/>
+                            <constraint firstItem="2iV-6p-yBZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W4c-m1-vd6"/>
+                            <constraint firstItem="2iV-6p-yBZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="aI1-pW-yKx"/>
+                            <constraint firstItem="WwZ-tD-Lxu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="duN-Fc-wOT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yL4-4x-WKO" secondAttribute="trailing" constant="95" id="i2g-6Q-Bgd"/>
+                            <constraint firstItem="WwZ-tD-Lxu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="yy9-fp-kZm"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pEh-83-hAa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1170" y="200"/>
         </scene>
     </scenes>
 </document>
